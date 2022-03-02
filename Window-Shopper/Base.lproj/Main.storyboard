@@ -16,22 +16,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Hourly Wage" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L6R-m1-1Uh" customClass="CurrencyTextField" customModule="Window_Shopper" customModuleProvider="target">
-                                <rect key="frame" x="135" y="104" width="144" height="34"/>
+                                <rect key="frame" x="20" y="104" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item Price" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ku5-ga-yR6" customClass="CurrencyTextField" customModule="Window_Shopper" customModuleProvider="target">
+                                <rect key="frame" x="20" y="163" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Ku5-ga-yR6" firstAttribute="height" secondItem="L6R-m1-1Uh" secondAttribute="height" id="70D-0c-xan"/>
                             <constraint firstItem="L6R-m1-1Uh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Iof-W4-jWn"/>
+                            <constraint firstItem="L6R-m1-1Uh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VQn-br-pYS"/>
+                            <constraint firstItem="Ku5-ga-yR6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXr-QU-RIB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6R-m1-1Uh" secondAttribute="trailing" constant="20" id="fJs-r5-ePy"/>
+                            <constraint firstItem="Ku5-ga-yR6" firstAttribute="top" secondItem="L6R-m1-1Uh" secondAttribute="bottom" constant="25" id="hV0-sX-czf"/>
+                            <constraint firstItem="Ku5-ga-yR6" firstAttribute="width" secondItem="L6R-m1-1Uh" secondAttribute="width" id="r26-96-NeE"/>
                             <constraint firstItem="L6R-m1-1Uh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tIV-mQ-Jra"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="First" destination="L6R-m1-1Uh" id="l9N-WG-NSJ"/>
+                        <outlet property="Second" destination="Ku5-ga-yR6" id="lCt-LI-nD0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="Ku5-ga-yR6">
+            <size key="intrinsicContentSize" width="93" height="34"/>
+        </designable>
+        <designable name="L6R-m1-1Uh">
+            <size key="intrinsicContentSize" width="144" height="34"/>
+        </designable>
+    </designables>
 </document>
