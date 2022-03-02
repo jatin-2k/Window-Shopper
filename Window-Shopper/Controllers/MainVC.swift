@@ -11,6 +11,7 @@ class MainVC: UIViewController {
 
     @IBOutlet weak var First: CurrencyTextField!
     @IBOutlet weak var Second: CurrencyTextField!
+    @IBOutlet weak var result: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,12 @@ class MainVC: UIViewController {
     }
     
     @objc func Calculate(){
-        print("I Here")
+        if let wageTxt = First.text, let priceTxt = Second.text{
+            if let wage = Double(wageTxt), let price = Double(priceTxt){
+                view.endEditing(true)
+                result.text = "\(Wage.calc(forWage: wage, andPrice: price))"
+            }
+        }
     }
 
 }

@@ -25,16 +25,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w3C-Z1-Tah">
+                                <rect key="frame" x="20" y="257" width="374" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="9Yo-7h-Mlc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daS-l2-38d">
+                                <rect key="frame" x="20" y="322" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ku5-ga-yR6" firstAttribute="height" secondItem="L6R-m1-1Uh" secondAttribute="height" id="70D-0c-xan"/>
                             <constraint firstItem="L6R-m1-1Uh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="Iof-W4-jWn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="daS-l2-38d" secondAttribute="trailing" constant="20" id="ODa-Pf-XKj"/>
                             <constraint firstItem="L6R-m1-1Uh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VQn-br-pYS"/>
+                            <constraint firstItem="daS-l2-38d" firstAttribute="top" secondItem="w3C-Z1-Tah" secondAttribute="bottom" id="XTy-gB-miL"/>
                             <constraint firstItem="Ku5-ga-yR6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bXr-QU-RIB"/>
+                            <constraint firstItem="w3C-Z1-Tah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cMi-cm-mBM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w3C-Z1-Tah" secondAttribute="trailing" constant="20" id="eZ1-1S-2bk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L6R-m1-1Uh" secondAttribute="trailing" constant="20" id="fJs-r5-ePy"/>
                             <constraint firstItem="Ku5-ga-yR6" firstAttribute="top" secondItem="L6R-m1-1Uh" secondAttribute="bottom" constant="25" id="hV0-sX-czf"/>
+                            <constraint firstItem="daS-l2-38d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kmY-nm-fDp"/>
+                            <constraint firstItem="w3C-Z1-Tah" firstAttribute="top" secondItem="Ku5-ga-yR6" secondAttribute="bottom" constant="60" id="n2a-F6-g9F"/>
                             <constraint firstItem="Ku5-ga-yR6" firstAttribute="width" secondItem="L6R-m1-1Uh" secondAttribute="width" id="r26-96-NeE"/>
                             <constraint firstItem="L6R-m1-1Uh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tIV-mQ-Jra"/>
                         </constraints>
@@ -42,6 +63,7 @@
                     <connections>
                         <outlet property="First" destination="L6R-m1-1Uh" id="l9N-WG-NSJ"/>
                         <outlet property="Second" destination="Ku5-ga-yR6" id="lCt-LI-nD0"/>
+                        <outlet property="result" destination="w3C-Z1-Tah" id="6lt-YQ-WYi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
