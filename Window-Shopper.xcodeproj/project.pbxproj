@@ -17,6 +17,8 @@
 		DFC9CD6727CF3FF00062A853 /* Window_ShopperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9CD6627CF3FF00062A853 /* Window_ShopperUITests.swift */; };
 		DFC9CD6927CF3FF00062A853 /* Window_ShopperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9CD6827CF3FF00062A853 /* Window_ShopperUITestsLaunchTests.swift */; };
 		DFC9CD7A27CF44CF0062A853 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9CD7927CF44CF0062A853 /* CurrencyTextField.swift */; };
+		DFC9CD7D27CF53610062A853 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9CD7C27CF53610062A853 /* Wage.swift */; };
+		DFC9CD7E27CF544C0062A853 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC9CD7C27CF53610062A853 /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		DFC9CD6627CF3FF00062A853 /* Window_ShopperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window_ShopperUITests.swift; sourceTree = "<group>"; };
 		DFC9CD6827CF3FF00062A853 /* Window_ShopperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Window_ShopperUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DFC9CD7927CF44CF0062A853 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		DFC9CD7C27CF53610062A853 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		DFC9CD4427CF3FEF0062A853 /* Window-Shopper */ = {
 			isa = PBXGroup;
 			children = (
+				DFC9CD7B27CF534F0062A853 /* Model */,
 				DFC9CD7627CF41E50062A853 /* Views */,
 				DFC9CD7527CF41DC0062A853 /* Controllers */,
 				DFC9CD4527CF3FEF0062A853 /* AppDelegate.swift */,
@@ -144,6 +148,14 @@
 				DFC9CD7927CF44CF0062A853 /* CurrencyTextField.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DFC9CD7B27CF534F0062A853 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFC9CD7C27CF53610062A853 /* Wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +291,7 @@
 			files = (
 				DFC9CD4A27CF3FEF0062A853 /* MainVC.swift in Sources */,
 				DFC9CD4627CF3FEF0062A853 /* AppDelegate.swift in Sources */,
+				DFC9CD7D27CF53610062A853 /* Wage.swift in Sources */,
 				DFC9CD7A27CF44CF0062A853 /* CurrencyTextField.swift in Sources */,
 				DFC9CD4827CF3FEF0062A853 /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFC9CD5D27CF3FF00062A853 /* Window_ShopperTests.swift in Sources */,
+				DFC9CD7E27CF544C0062A853 /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
